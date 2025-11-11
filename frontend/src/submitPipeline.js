@@ -13,7 +13,7 @@ async function submitPipeline() {
         const formData = new FormData();
         formData.append('pipeline', JSON.stringify(pipeline));
 
-        const response = await fetch('http://localhost:8000/pipelines/parse', {
+        const response = await fetch('https://ai-pipeline-workflow-2mv2.vercel.app/pipelines/parse', {
             method: 'POST',
             body: formData,
         });
