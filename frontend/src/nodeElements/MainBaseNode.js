@@ -33,7 +33,7 @@ export const MainBaseNode = memo(
         useEffect(() => {
             console.log(`🔄 useUpdateNodeInternals(${id}) triggered`);
             updateNodeInternals(id);
-        }, [handles.left.length, handles.right.length, id]);
+        }, [updateNodeInternals, handles.left.length, handles.right.length, id]);
         return (
             <div
                 id={`${nodeId}_${id}`}
