@@ -1,5 +1,6 @@
 # AI Pipeline Workflow: Node Abstraction System
 
+**Live Working Link:** [Click here]()
 **Project Demo:** [Watch on Loom](https://www.loom.com/share/877b2ce110eb47ec9155eefb20890d49)
 
 This project implements an AI Pipeline Workflow Builder — a modular, node-based interface for visually constructing data and LLM pipelines.  
@@ -99,5 +100,9 @@ POST /pipelines/parse
   "is_dag": true
 }
 
-Aaftab Ansari
-Front End Developer | React • FastAPI • Workflow Systems
+---
+
+## Author
+
+**Aaftab Ansari**  
+Full-Stack Developer | React • FastAPI • Workflow System
