@@ -58,7 +58,7 @@ Each node type supports custom handles (connections) and variable-based linking 
 ---
 
 ## Project Structure
-
+```
 │
 ├── frontend/
 │ ├── public/
@@ -76,6 +76,7 @@ Each node type supports custom handles (connections) and variable-based linking 
 └── README.md
 
 ---
+```
 
 ## Setup and Installation
 
