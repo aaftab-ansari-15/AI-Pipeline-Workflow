@@ -55,7 +55,6 @@ export const PipelineUI = () => {
     onConnect
   } = useStore(selector, shallow);
 
-
   const onDrop = useCallback(
     (event) => {
       event.preventDefault();
@@ -74,28 +73,31 @@ export const PipelineUI = () => {
           y: event.clientY - reactFlowBounds.top,
         });
 
-        const getInitNodeData = (newNodeID, type) => {
+        // const getInitNodeData = (newNodeID, type) => {
 
-          const nodeData = {
-            deleteNode: deleteNode,
-            id: newNodeID,
-            nodeType: type,
-          };
-
-          return nodeData;
-        }
+        //   const nodeData = {
+        //     deleteNode: deleteNode,
+        //     id: newNodeID,
+        //     nodeType: type,
+        //   };
+        //   return nodeData;
+        // }
         const newNodeID = getNodeID(type);
         const newNode = {
           id: newNodeID,
           type,
           position,
-          data: getInitNodeData(newNodeID, type),
+          data: {
+            deleteNode,
+            id: newNodeID,
+            nodeType: type,
+          },
         };
 
         addNode(newNode);
       }
     },
-    [reactFlowInstance, addNode, getNodeID, getInitNodeData]
+    [reactFlowInstance, addNode, getNodeID]
   );
 
   const onDragOver = useCallback((event) => {
