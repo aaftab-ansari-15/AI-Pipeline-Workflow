@@ -1,0 +1,18 @@
+# Ignore frontend-specific files
+frontend/node_modules
+frontend/.pnp
+frontend/.pnp.js
+frontend/build
+frontend/coverage
+frontend/.DS_Store
+frontend/.env.local
+frontend/env.development.local
+frontend/env.production.local
+frontend/env.test.local
+
+# Common stuff
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
