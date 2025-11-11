@@ -54,16 +54,7 @@ export const PipelineUI = () => {
     onEdgesChange,
     onConnect
   } = useStore(selector, shallow);
-  const getInitNodeData = (newNodeID, type) => {
 
-    const nodeData = {
-      deleteNode: deleteNode,
-      id: newNodeID,
-      nodeType: type,
-    };
-
-    return nodeData;
-  }
 
   const onDrop = useCallback(
     (event) => {
@@ -83,6 +74,16 @@ export const PipelineUI = () => {
           y: event.clientY - reactFlowBounds.top,
         });
 
+        const getInitNodeData = (newNodeID, type) => {
+
+          const nodeData = {
+            deleteNode: deleteNode,
+            id: newNodeID,
+            nodeType: type,
+          };
+
+          return nodeData;
+        }
         const newNodeID = getNodeID(type);
         const newNode = {
           id: newNodeID,
