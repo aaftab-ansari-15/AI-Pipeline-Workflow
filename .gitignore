@@ -9,9 +9,9 @@ frontend/.env.local
 frontend/env.development.local
 frontend/env.production.local
 frontend/env.test.local
+backend/__pycache__/
 
 # Common stuff
-__pycache__/
 *.pyc
 .venv/
 .env
