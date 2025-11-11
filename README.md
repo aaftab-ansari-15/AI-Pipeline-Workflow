@@ -3,15 +3,14 @@
 **Live Working Link:** [Click here]()
 **Project Demo:** [Watch on Loom](https://www.loom.com/share/877b2ce110eb47ec9155eefb20890d49)
 
-This project implements an AI Pipeline Workflow Builder — a modular, node-based interface for visually constructing data and LLM pipelines.  
-It combines a React + React Flow frontend for interactive graph creation with a FastAPI backend that validates and analyzes pipeline structures.
-
 ---
 
 ## Overview
 
-The application allows users to create custom pipelines by connecting various types of nodes, including input, output, LLM, and text nodes.  
-Each node type supports custom handles (connections) and variable-based linking that automatically generates edges between dependent nodes.
+- The application allows users to create custom pipelines by connecting various types of nodes, including input, output, LLM, and text nodes.  
+- Each node type supports custom handles (connections) and variable-based linking that automatically generates edges between dependent nodes.
+- This project implements an AI Pipeline Workflow Builder — a modular, node-based interface for visually constructing data and LLM pipelines.  
+- It combines a React + React Flow frontend for interactive graph creation with a FastAPI backend that validates and analyzes pipeline structures.
 
 ---
 
@@ -82,25 +81,29 @@ Each node type supports custom handles (connections) and variable-based linking 
 ## Setup and Installation
 
 ### Frontend
+```
 cd frontend
 npm install
 npm start
+```
 
 ### Backend
+```
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
 
 ### Example API Response
-
+```
 POST /pipelines/parse
 {
   "num_nodes": 5,
   "num_edges": 4,
   "is_dag": true
 }
-
 ---
+```
 
 ## Author
 
