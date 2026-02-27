@@ -97,7 +97,7 @@ export const PipelineUI = () => {
         addNode(newNode);
       }
     },
-    [reactFlowInstance, addNode, getNodeID]
+    [reactFlowInstance, addNode, getNodeID, deleteNode]
   );
 
   const onDragOver = useCallback((event) => {
